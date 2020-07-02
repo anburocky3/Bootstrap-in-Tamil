@@ -1,0 +1,28 @@
+body {
+    background-color: #673ab7;
+    color: #FFF;
+}
+
+div.container {
+    border: 1px solid #FFF;
+}
+
+.bg {
+    padding: 10px;
+    background-color: #563d7c26;
+    border: 1px solid rgba(86,61,124,.2);
+}
+
+.color-1 {
+    padding: 10px;
+    background-color: #d3bbff;
+    color: #000;
+}
+
+.height-500 {
+    height: 500px;
+}
+
+.p50 {
+    padding: 50px;
+}

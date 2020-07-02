@@ -10,34 +10,58 @@
     <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="./assets/css/style.css">
 
-    <style>
-        body {
-            background-color: #673ab7;
-            color: #FFF;
-        }
-
-        div.container {
-            /* border: 1px solid #FFF; */
-            background-color: #d3bbff;
-
-        }
-
-        .color-1 {
-            color: #000;
-        }
-
-        .p50 {
-            padding: 50px;
-        }
-    </style>
 </head>
 
 <body>
 
-    <div class="container p50 color-1">
+    <div class="container p50">
         <h1>Welcome to Bootstrap course - தமிழில் </h1>
         <p>Lets start learning bootstrap.</p>
     </div>
+
+    <div class="container color-1 height-500">
+        <h4>Bootstrap Grids</h4>
+        <p>Learn basic layouts.</p>
+        <!-- Row 1 -->
+        <div class="row"> 
+            <div class="col bg">
+                Row 1, Column 1 (4 Column)
+            </div>
+            <div class="col bg">
+                Row 1, Column 2 (4 Column)
+            </div>
+            <div class="col bg">
+                Row 1, Column  (4 Column)
+            </div>
+        </div>
+
+        <!-- Row 2 -->
+        <div class="row"> 
+            <div class="col bg">
+                Row 2
+            </div>
+            <div class="col bg">
+                Row 2
+            </div>
+            <div class="col bg">
+                Row 2
+            </div>
+            <div class="col bg">
+                Row 2
+            </div>
+        </div>
+
+        <!-- Row 3 -->
+        <div class="row">
+            <div class="col-md-6 bg">
+                Row 3, 6 Column
+            </div>
+            <div class="col-md-6 bg ">
+                Row 3, 6 Column
+            </div>
+        </div>
+    </div>
+
 
     <!-- Bootstrap JS -->
     <script src="./assets/js/jquery.min.js"></script>
