@@ -2,156 +2,61 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bootstrap course in Tamil</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bootstrap course in Tamil</title>
 
-    <!-- Bootstrap -->
-    <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
-    <link rel="stylesheet" href="./assets/css/style.css">
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="./assets/css/style.css">
 
 </head>
 
 <body>
-    <!-- https://getbootstrap.com/docs/4.5/content/images/ -->
-    <div class="container p30">
-        <h1>Bootstrap Typography - தமிழில் </h1>
-        <p>Lets start learning bootstrap.</p>
+
+  <navbar class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <div class="container">
+
+      <a href="/index.html" class="navbar-brand">
+        <img src="https://getbootstrap.com/docs/4.5/assets/brand/bootstrap-solid.svg" width="30"
+          class="d-inline-block align-top" alt="Logo" loading="lazy">
+        Bootstrap Tamil
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#myCollapse"
+        aria-controls="myCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="myCollapse">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a href="/home.html" class="nav-link">Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="/about.html" class="nav-link">About</a>
+          </li>
+          <li class="nav-item">
+            <a href="/contact.html" class="nav-link">Contact</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown"> Help</a>
+
+            <div class="dropdown-menu">
+              <a href="/" class="dropdown-item">Github</a>
+              <a href="/" class="dropdown-item">Facebook</a>
+            </div>
+
+          </li>
+        </ul>
+
+      </div>
     </div>
 
-    <div class="container color-1 height-500 px-5">
-        <h3>
-            Welcome Anbu
-            <small class="text-muted">(Administrator)</small>
-        </h3>
-        <p class="leads">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis quibusdam, sequi aspernatur
-            modi doloremque perferendis quod ut assumenda porro nam eaque odit at exercitationem nihil esse maxime
-            commodi, voluptatibus quia?</p>
+  </navbar>
 
-        <!--
-            .table
-            .table-bordered
-            .table-striped
-            .table-hover
-            .table-dark
-            .table-light
-
-            .thead-light
-            .thead-dark
-
-            .table-sm
-            .table-responsive
-            .table-responsive{-sm|-md|-lg|-xl}
-        -->
-
-        <table class="table table-bordered table-striped">
-            <caption>List of Enrollments</caption>
-            <thead class="thead-light">
-                <tr>
-                    <th width="25">#ID</th>
-                    <th>Name</th>
-                    <th>Course</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>1</td>
-                    <td>Ajith</td>
-                    <th>HTML5 Course</th>
-                </tr>
-                <tr>
-                    <td>2</td>
-                    <td>Trisha</td>
-                    <th>JavaScript Course</th>
-                </tr>
-                <tr>
-                    <td>3</td>
-                    <td>Mavis</td>
-                    <th>CSS3 Course</th>
-                </tr>
-
-            </tbody>
-        </table>
-
-        <div class="table-responsive">
-            <table class="table table-bordered table-striped">
-                <caption>List of Enrollments</caption>
-                <thead class="thead-light">
-                    <tr>
-                        <th width="25">#ID</th>
-                        <th>Name</th>
-                        <th>Course</th>
-                        <th>Course</th>
-                        <th>Course</th>
-                        <th>Course</th>
-                        <th>Course</th>
-                        <th>Course</th>
-                        <th>Course</th>
-                        <th>Course</th>
-                        <th>Course</th>
-                        <th>Course</th>
-                        <th>Course</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>1</td>
-                        <td>Ajith</td>
-                        <td>HTML5 Course</td>
-                        <td>HTML5 Course</td>
-                        <td>HTML5 Course</td>
-                        <td>HTML5 Course</td>
-                        <td>HTML5 Course</td>
-                        <td>HTML5 Course</td>
-                        <td>HTML5 Course</td>
-                        <td>HTML5 Course</td>
-                        <td>HTML5 Course</td>
-                        <td>HTML5 Course</td>
-                        <td>HTML5 Course</td>
-
-                    </tr>
-                    <tr>
-                        <td>2</td>
-                        <td>Trisha</td>
-                        <td>JavaScript Course</td>
-                        <td>JavaScript Course</td>
-                        <td>JavaScript Course</td>
-                        <td>JavaScript Course</td>
-                        <td>JavaScript Course</td>
-                        <td>JavaScript Course</td>
-                        <td>JavaScript Course</td>
-                        <td>JavaScript Course</td>
-                        <td>JavaScript Course</td>
-                        <td>JavaScript Course</td>
-                        <td>JavaScript Course</td>
-                    </tr>
-                    <tr>
-                        <td>3</td>
-                        <td>Mavis</td>
-                        <td>CSS3 Course</td>
-                        <td>CSS3 Course</td>
-                        <td>CSS3 Course</td>
-                        <td>CSS3 Course</td>
-                        <td>CSS3 Course</td>
-                        <td>CSS3 Course</td>
-                        <td>CSS3 Course</td>
-                        <td>CSS3 Course</td>
-                        <td>CSS3 Course</td>
-                        <td>CSS3 Course</td>
-                        <td>CSS3 Course</td>
-
-                    </tr>
-
-                </tbody>
-            </table>
-        </div>
-
-    </div>
-
-
-    <!-- Bootstrap JS -->
-    <script src="./assets/js/jquery.min.js"></script>
-    <script src="./assets/js/bootstrap.min.js"></script>
+  <!-- Bootstrap JS -->
+  <script src="./assets/js/jquery.min.js"></script>
+  <script src="./assets/js/bootstrap.min.js"></script>
 </body>
 
 </html>
