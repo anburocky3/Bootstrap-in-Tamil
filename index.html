@@ -2,70 +2,80 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Bootstrap course in Tamil</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap course in Tamil</title>
 
-  <!-- Bootstrap -->
-  <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
-  <link rel="stylesheet" href="./assets/css/style.css">
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
 
 </head>
 
 <body>
-  <navbar class="navbar navbar-expand-lg navbar-dark bg-primary">
-    <div class="container">
-      <a href="/index.html" class="navbar-brand">
-        <img src="https://getbootstrap.com/docs/4.5/assets/brand/bootstrap-solid.svg" width="30"
-          class="d-inline-block align-top" alt="Logo" loading="lazy">
-        Bootstrap Tamil
-      </a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#myCollapse"
-        aria-controls="myCollapse" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
+    <!-- Header -->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
 
-      <div class="collapse navbar-collapse" id="myCollapse">
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item active">
-            <a href="/home.html" class="nav-link">Home</a>
-          </li>
-          <li class="nav-item">
-            <a href="/about.html" class="nav-link">About</a>
-          </li>
-          <li class="nav-item">
-            <a href="/contact.html" class="nav-link">Contact</a>
-          </li>
-          <li class="nav-item dropdown">
-            <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown"> Help</a>
+                <a href="/" class="navbar-brand">
+                    <img src="https://getbootstrap.com/docs/4.5/assets/brand/bootstrap-solid.svg" width="30" height="30"
+                        alt="Bootstrap Tamil" loading="lazy" class="d-inline-block align-top">
+                    Bootstrap Tamil</a>
 
-            <div class="dropdown-menu">
-              <a href="/" class="dropdown-item">Github</a>
-              <a href="/" class="dropdown-item">Facebook</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#myNavBar"
+                    aria-controls="myNavBar" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="myNavBar">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item active">
+                            <a href="/index.html" class="nav-link">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="/about.html" class="nav-link">About</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Help
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="#">Facebook</a>
+                                <a class="dropdown-item" href="#">YouTube</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="#">Github</a>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a href="/blog.html" class="nav-link">Blog</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="/contact.html" class="nav-link disabled">Contact</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
+        </nav>
+    </header>
+    <!-- End Header -->
 
-          </li>
-        </ul>
-
-      </div>
+    <!-- Content -->
+    <div class="jumbotron">
+        <div class="container">
+            <h1 class="display-4">Hello There!</h1>
+            <p class="lead">Welcome to Bootstrap Tutorials in தமிழ்</p>
+            <hr class="mt-5">
+            <p>Before learning bootstrap, learn the HTML, CSS & Javascript(optional)</p>
+            <button>Getting Started</button>
+        </div>
     </div>
 
-  </navbar>
 
-  <!-- Content -->
-  <div class="jumbotron">
-    <div class="container">
-      <h1 class="display-4">Hello there!</h1>
-      <p class="lead">Welcome to Bootstrap Tutorials in தமிழ்</p>
-      <hr class="mt-5">
-      <p>Before learning bootstrap, learn the HTML, CSS & Javascript(Optional)</p>
-      <button> Getting started</button>
-    </div>
-  </div>
-
-  <!-- Bootstrap JS -->
-  <script src="./assets/js/jquery.min.js"></script>
-  <script src="./assets/js/bootstrap.min.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="./assets/js/jquery.min.js"></script>
+    <script src="./assets/js/bootstrap.min.js"></script>
 </body>
 
 </html>
