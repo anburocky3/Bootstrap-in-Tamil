@@ -12,6 +12,7 @@ Learn to build beautiful high quality web designs, sites using the Bootstrap CSS
 | #17 | Using Icons in Bootstrap | https://github.com/anburocky3/Bootstrap-in-Tamil/tree/17-Using-Icons-in-Bootstrap |
 | #18 | Bootstrap Badges         | https://github.com/anburocky3/Bootstrap-in-Tamil/tree/18-Bootstrap-Badges         |
 | #19 | Bootstrap Breadcrumb     | https://github.com/anburocky3/Bootstrap-in-Tamil/tree/19-Bootstrap-Breadcrumb     |
+| #20 | Bootstrap Cards          | https://github.com/anburocky3/Bootstrap-in-Tamil/tree/20-Bootstrap-Cards          |
 
 ---
 
@@ -22,8 +23,9 @@ Join our Facebook Group: https://www.facebook.com/groups/cyberdudetraining/
 ### For Updates:
 
 YouTube: https://www.youtube.com/user/CyberDudeNetworks/
+
 Telegram: https://t.me/cyberdudechannel
 
 ### Instructor:
 
-Anbu Selvan (https://www.facebook.com/anburocky3) [<img src="https://image.flaticon.com/icons/png/512/124/124010.png" width="20"/>](https://www.facebook.com/anburocky3)
+Anbuselvan (https://www.facebook.com/anburocky3) [<img src="https://image.flaticon.com/icons/png/512/124/124010.png" width="20"/>](https://www.facebook.com/anburocky3)
