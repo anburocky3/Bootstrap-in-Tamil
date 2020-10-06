@@ -8,3 +8,8 @@
         display: block;
     }
 }
+
+.bs-color {
+    color: #FFF;
+    background-color: #563d7c;
+}
