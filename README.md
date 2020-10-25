@@ -15,6 +15,7 @@ Learn to build beautiful high quality web designs, sites using the Bootstrap CSS
 | #20 | Bootstrap Cards            | https://github.com/anburocky3/Bootstrap-in-Tamil/tree/20-Bootstrap-Cards            |
 | #21 | Bootstrap Horizontal Cards | https://github.com/anburocky3/Bootstrap-in-Tamil/tree/21-Bootstrap-Horizontal-Cards |
 | #22 | Bootstrap List Groups      | https://github.com/anburocky3/Bootstrap-in-Tamil/tree/22-Bootstrap-List-Group       |
+| #23 | Bootstrap Carousel Sliders | https://github.com/anburocky3/Bootstrap-in-Tamil/tree/23-Bootstrap-Carousel         |
 
 ---
 
