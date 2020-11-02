@@ -81,6 +81,77 @@
         </div>
     </div>
 
+    <!-- Collapse -->
+    <div class="container">
+        <h4>Download links are below</h4>
+        <p>Choose the download links based on your region.</p>
+        <p>
+            <a href="#collapseExample" class="btn btn-primary" data-toggle="collapse" role="button"
+                aria-expanded="false" aria-controls="collapseExample">Server #1</a>
+            <button class="btn btn-primary" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false"
+                aria-controls="collapseExample">Server #2</button>
+        </p>
+        <div class="collapse" id="collapseExample">
+            <div class="card card-body">
+                https://google.com
+            </div>
+        </div>
+    </div>
+
+    <hr class="my-5">
+
+    <div class="container accordion" id="accordion">
+        <h4>Frequently Asked questions</h4>
+        <p>Have a doubt? Checkout our frequently asked questions</p>
+
+        <div class="card">
+            <div class="card-header">
+                <a href="#collapseOne" data-toggle="collapse" class="card-link">
+                    Is this course free?
+                </a>
+            </div>
+            <!-- Answer -->
+            <div id="collapseOne" class="collapse" data-parent="#accordion">
+                <div class="card-body">
+                    Yes, ofcourse! Everything is free!
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-header">
+                <a href="#questionTwo" data-toggle="collapse" class="card-link">
+                    Do you have any app for this?
+                </a>
+            </div>
+            <!-- Answer -->
+            <div id="questionTwo" class="collapse" data-parent="#accordion">
+                <div class="card-body">
+                    Yes, we aer on process of building one!
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-header">
+                <a href="#QuestionThree" data-toggle="collapse" class="card-link">
+                    How can i contact you?
+                </a>
+            </div>
+            <!-- Answer -->
+            <div id="QuestionThree" class="collapse" data-parent="#accordion">
+                <div class="card-body">
+                    Through Email!
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <hr class="my-5">
+
+
+
     <!-- Bootstrap JS -->
     <script src="./assets/js/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
