@@ -17,6 +17,8 @@ Learn to build beautiful high quality web designs, sites using the Bootstrap CSS
 | #22 | Bootstrap List Groups          | https://github.com/anburocky3/Bootstrap-in-Tamil/tree/22-Bootstrap-List-Group       |
 | #23 | Bootstrap Carousel Sliders     | https://github.com/anburocky3/Bootstrap-in-Tamil/tree/23-Bootstrap-Carousel         |
 | #24 | Bootstrap Collapse & Accordion | https://github.com/anburocky3/Bootstrap-in-Tamil/tree/24-Bootstrap-Collapse         |
+| #25 | Bootstrap Dropdowns            | https://github.com/anburocky3/Bootstrap-in-Tamil/tree/25-Bootstrap-Dropdown         |
+| #26 | Bootstrap Form (Contact page)  | https://github.com/anburocky3/Bootstrap-in-Tamil/tree/26-Bootstrap-Forms            |
 
 ---
 
