@@ -115,33 +115,43 @@
                     required
                   />
                 </div>
-                <div class="form-group">
-                  <label for="mobile">Mobile no.</label>
-                  <input
-                    type="number"
-                    class="form-control"
-                    placeholder="+91 9876543212"
-                    required
-                  />
+                <div class="form-row">
+                  <div class="col-md-6">
+                    <div class="form-group">
+                      <label for="mobile">Mobile no.</label>
+                      <input
+                        type="number"
+                        class="form-control"
+                        placeholder="+91 9876543212"
+                        required
+                        id="phoneHelp"
+                      />
+                      <small id="phoneHelp" class="form-text text-muted">
+                        We won't share your number with anyone else.
+                      </small>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="form-group">
+                      <label for="email">Email</label>
+                      <input
+                        type="email"
+                        name="email"
+                        id="email"
+                        class="form-control"
+                        placeholder="you@awesome.com"
+                        required
+                        aria-describedby="emailHelp"
+                      />
+                      <small id="emailHelp" class="form-text text-muted">
+                        We'll never share your email with anyone else.
+                      </small>
+                    </div>
+                  </div>
                 </div>
-                <div class="form-group">
-                  <label for="email">Email</label>
-                  <input
-                    type="email"
-                    name="email"
-                    id="email"
-                    class="form-control"
-                    placeholder="you@awesome.com"
-                    required
-                    aria-describedby="emailHelp"
-                  />
-                  <small id="emailHelp" class="form-text text-muted">
-                    We'll never share your email with anyone else.
-                  </small>
-                </div>
-                <div class="form-group">
-                  <div class="row">
-                    <div class="col">
+                <div class="form-row">
+                  <div class="col-md-6">
+                    <div class="form-group">
                       <label for="password">Password</label>
                       <input
                         type="password"
@@ -152,7 +162,9 @@
                         required
                       />
                     </div>
-                    <div class="col">
+                  </div>
+                  <div class="col-md-6">
+                    <div class="form-group">
                       <label for="c_password">Confirm Password</label>
                       <input
                         type="password"
@@ -166,7 +178,7 @@
                   </div>
                 </div>
 
-                <div class="form-group form-check">
+                <div class="form-group form-check text-center">
                   <input
                     type="checkbox"
                     class="form-check-input"
@@ -178,7 +190,7 @@
                   </label>
                 </div>
 
-                <div class="form-group">
+                <div class="form-group text-center">
                   <button type="reset" class="btn btn-secondary">Reset</button>
 
                   <button class="btn btn-success">
