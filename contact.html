@@ -146,6 +146,7 @@
                     type="text"
                     class="form-control"
                     placeholder="Enter your name"
+                    required
                   />
                 </div>
                 <div class="form-group">
@@ -157,6 +158,7 @@
                       name="gender"
                       value="Male"
                       id="gender"
+                      required
                     />
                     <label class="form-check-label" for="gender">Male</label>
                   </div>
@@ -184,9 +186,10 @@
                 <div class="form-group">
                   <label for="mobile">Mobile no.</label>
                   <input
-                    type="text"
+                    type="number"
                     class="form-control"
                     placeholder="+91 9876543212"
+                    required
                   />
                 </div>
                 <div class="form-group">
@@ -198,6 +201,7 @@
                     class="form-control"
                     placeholder="you@awesome.com"
                     aria-describedby="emailHelp"
+                    required
                   />
                   <small id="emailHelp" class="form-text text-muted">
                     We'll never share your email with anyone else.
@@ -205,7 +209,12 @@
                 </div>
                 <div class="form-group">
                   <label for="source">Came from</label>
-                  <select name="source" id="source" class="form-control">
+                  <select
+                    name="source"
+                    id="source"
+                    class="form-control"
+                    required
+                  >
                     <option value="">--Select Option--</option>
                     <option value="Google">Google</option>
                     <option value="YouTube">Youtube</option>
@@ -220,15 +229,17 @@
                     rows="5"
                     class="form-control"
                     placeholder="Enter message briefly"
+                    required
                   ></textarea>
                 </div>
                 <div class="form-group form-check">
                   <input
                     type="checkbox"
                     class="form-check-input"
-                    id="exampleCheck1"
+                    id="termsAgreement"
+                    required
                   />
-                  <label class="form-check-label" for="exampleCheck1">
+                  <label class="form-check-label" for="termsAgreement">
                     I agree to terms and conditions.
                   </label>
                 </div>
