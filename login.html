@@ -98,17 +98,20 @@
         <div class="col-md-4 mx-auto">
           <div class="card">
             <div class="card-body">
-              <form action="" method="POST">
-                <div class="form-group">
+              <form class="needs-validation" action="" method="POST" novalidate>
+                <div class="form-group" style="position: relative">
                   <label for="email">Email</label>
                   <input
                     type="email"
                     name="email"
                     id="email"
-                    class="form-control"
+                    class="form-control is-valid"
                     placeholder="you@awesome.com"
                     required
                   />
+                  <div class="valid-tooltip">Looks good!</div>
+
+                  <div class="invalid-feedback">Please enter your email.</div>
                 </div>
 
                 <div class="form-group">
@@ -121,6 +124,9 @@
                     class="form-control"
                     required
                   />
+                  <div class="invalid-feedback">
+                    Please enter your password.
+                  </div>
                 </div>
 
                 <div class="form-group">
@@ -142,73 +148,6 @@
       </div>
     </div>
 
-    <!-- Horizontal forms -->
-    <div class="container my-5">
-      <div class="row">
-        <div class="col-md-6 mx-auto">
-          <div class="card">
-            <div class="card-body">
-              <form action="" method="POST">
-                <div class="form-group row">
-                  <label for="email" class="col-sm-4 col-form-label">
-                    Email
-                  </label>
-                  <div class="col-sm-8">
-                    <input
-                      type="email"
-                      name="email"
-                      id="email"
-                      class="form-control"
-                      placeholder="anbuceo@gmail.com"
-                    />
-                  </div>
-                </div>
-                <div class="form-group row">
-                  <label for="password" class="col-sm-4 col-form-label">
-                    Password
-                  </label>
-                  <div class="col-sm-8">
-                    <input
-                      type="password"
-                      name="password"
-                      id="password"
-                      class="form-control"
-                      placeholder="Password"
-                    />
-                  </div>
-                </div>
-                <div class="form-group row">
-                  <div class="col-sm-4"></div>
-                  <div class="col-sm-8">
-                    <div class="form-check">
-                      <input
-                        type="checkbox"
-                        name="agreements"
-                        id="agreements"
-                        class="form-check-input"
-                      />
-                      <label for="agreements" class="form-check-label">
-                        I agree the terms and conditions.
-                      </label>
-                    </div>
-                  </div>
-                </div>
-                <div class="form-group row">
-                  <div class="col-sm-4"></div>
-                  <div class="col-sm-8">
-                    <button class="btn btn-primary btn-block">
-                      <i class="fa fa-unlock-alt mr-2"></i>
-                      Login
-                    </button>
-                  </div>
-                </div>
-              </form>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
     <!-- Bootstrap JS -->
     <script src="./assets/js/jquery.min.js"></script>
     <script
@@ -217,5 +156,65 @@
       crossorigin="anonymous"
     ></script>
     <script src="./assets/js/bootstrap.min.js"></script>
+
+    <script>
+      // Example starter JavaScript for disabling form submissions if there are invalid fields
+      // (function () {
+      //   "use strict";
+      //   window.addEventListener(
+      //     "load",
+      //     function () {
+      //       // Fetch all the forms we want to apply custom Bootstrap validation styles to
+      //       var forms = document.getElementsByClassName("needs-validation");
+      //       // Loop over them and prevent submission
+      //       var validation = Array.prototype.filter.call(
+      //         forms,
+      //         function (form) {
+      //           form.addEventListener(
+      //             "submit",
+      //             function (event) {
+      //               if (form.checkValidity() === false) {
+      //                 event.preventDefault();
+      //                 event.stopPropagation();
+      //               }
+      //               form.classList.add("was-validated");
+      //             },
+      //             false
+      //           );
+      //         }
+      //       );
+      //     },
+      //     false
+      //   );
+      // })();
+
+      (function () {
+        "use strict";
+        window.addEventListener(
+          "load",
+          function () {
+            // Code
+            let forms = document.getElementsByTagName("form");
+            var validation = Array.prototype.filter.call(
+              forms,
+              function (form) {
+                form.addEventListener(
+                  "submit",
+                  function (event) {
+                    if (form.checkValidity() === false) {
+                      event.preventDefault();
+                      event.stopPropagation();
+                    }
+                    form.classList.add("was-validated");
+                  },
+                  false
+                );
+              }
+            );
+          },
+          false
+        );
+      })();
+    </script>
   </body>
 </html>
