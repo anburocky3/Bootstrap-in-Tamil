@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tutorial Register - cyberdude training</title>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
+
+  <body class="bg-light">
+    <!-- Header -->
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <div class="container">
+          <a href="/" class="navbar-brand">
+            <img
+              src="https://getbootstrap.com/docs/4.5/assets/brand/bootstrap-solid.svg"
+              width="30"
+              height="30"
+              alt="Bootstrap Tamil"
+              loading="lazy"
+              class="d-inline-block align-top"
+            />
+            Bootstrap Tamil
+          </a>
+
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#myNavBar"
+            aria-controls="myNavBar"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="myNavBar">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item">
+                <a href="/index.html" class="nav-link">Home</a>
+              </li>
+              <li class="nav-item">
+                <a href="/about.html" class="nav-link">About</a>
+              </li>
+              <li class="nav-item">
+                <a href="/courses.html" class="nav-link">Courses</a>
+              </li>
+              <li class="nav-item">
+                <a href="/blog.html" class="nav-link">Blog</a>
+              </li>
+              <li class="nav-item">
+                <a href="/login.html" class="nav-link">Login</a>
+              </li>
+
+              <li class="nav-item">
+                <a href="/contact.html" class="nav-link">Contact</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="btn btn-success shadow-none my-2 my-sm-0 ml-0 ml-sm-3 dropdown-toggle active"
+                  href="#"
+                  id="navbarDropdown"
+                  role="button"
+                  data-toggle="dropdown"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                >
+                  Register
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="/register.html">Member</a>
+                  <a class="dropdown-item" href="/tutorial-register.html">
+                    Tutorial request
+                  </a>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- End Header -->
+
+    <!-- Content -->
+    <section class="bg-hero pt-5 text-white">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-4">
+            <div class="mt-5">
+              <img
+                src="https://icons-for-free.com/iconfiles/png/512/message+one+comment+one+message+request+icon-1320184041562889001.png"
+                alt=""
+                width="240"
+              />
+              <h1>Have a tutorial request?</h1>
+              <p class="leading">
+                Share it with us! We will try to make it available for you.
+              </p>
+            </div>
+          </div>
+          <div class="col-sm-8 text-dark">
+            <div class="card">
+              <div class="card-body">
+                <form
+                  action=""
+                  method="POST"
+                  onsubmit="return false"
+                  novalidate
+                >
+                  <div class="form-row">
+                    <div class="col-6">
+                      <div class="form-group">
+                        <label for="name">Full Name</label>
+                        <input
+                          type="text"
+                          placeholder="Full name"
+                          class="form-control"
+                          required
+                        />
+                      </div>
+                    </div>
+                    <div class="col-6">
+                      <div class="form-group">
+                        <label for="email">Email</label>
+                        <input
+                          type="email"
+                          placeholder="you@awesome.com"
+                          class="form-control"
+                          required
+                        />
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="form-group">
+                    <label for="">
+                      Previously, what did you learn from this channel?
+                    </label>
+
+                    <div class="row">
+                      <div class="col-6">
+                        <div class="form-check">
+                          <input
+                            type="checkbox"
+                            class="form-check-input"
+                            id="courses_html5"
+                            name="courses[]"
+                            value="HTML5"
+                            required
+                          />
+                          <label for="courses_html5" class="form-check-label">
+                            HTML5 Course
+                          </label>
+                        </div>
+                        <div class="form-check">
+                          <input
+                            type="checkbox"
+                            class="form-check-input"
+                            id="courses_css"
+                            name="courses[]"
+                            value="CSS3"
+                          />
+                          <label for="courses_css" class="form-check-label">
+                            CSS3 Course
+                          </label>
+                        </div>
+                        <div class="form-check">
+                          <input
+                            type="checkbox"
+                            class="form-check-input"
+                            id="courses"
+                            required
+                          />
+                          <label for="courses" class="form-check-label">
+                            CSS Flexbox
+                          </label>
+                        </div>
+                      </div>
+                      <div class="col-6">
+                        <div class="form-check">
+                          <input
+                            type="checkbox"
+                            class="form-check-input"
+                            id="courses"
+                            required
+                          />
+                          <label for="courses" class="form-check-label">
+                            Bootstrap Course
+                          </label>
+                        </div>
+                        <div class="form-check">
+                          <input
+                            type="checkbox"
+                            class="form-check-input"
+                            id="courses"
+                            required
+                          />
+                          <label for="courses" class="form-check-label">
+                            JavaScript Course
+                          </label>
+                        </div>
+                        <div class="form-check">
+                          <input
+                            type="checkbox"
+                            class="form-check-input"
+                            id="courses"
+                            required
+                          />
+                          <label for="courses" class="form-check-label">
+                            Others
+                          </label>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-6">
+                      <div class="form-group">
+                        <label for="isSubscribed" class="mr-4">
+                          Did you subscribe to the channel? *
+                        </label>
+                        <div class="form-check">
+                          <input
+                            type="radio"
+                            name="isSubscribed"
+                            id="subscribed_yes"
+                            class="form-check-input"
+                          />
+                          <label
+                            for="subscribed_yes"
+                            class="form-check-label mr-3"
+                          >
+                            Yes
+                          </label>
+                        </div>
+                        <div class="form-check">
+                          <input
+                            type="radio"
+                            name="isSubscribed"
+                            id="subscribed_no"
+                            class="form-check-input"
+                          />
+                          <label for="subscribed_no" class="form-check-label">
+                            No
+                          </label>
+                        </div>
+
+                        <div class="form-group mt-3">
+                          <label for="year">
+                            From which year are you with us? *
+                          </label>
+                          <select name="year" id="year" class="form-control">
+                            <option value="">--Choose--</option>
+                            <option value="2019">2019</option>
+                          </select>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-6">
+                      <div class="form-group">
+                        <label for="tutorial">
+                          Do you have any tutorial requests? *
+                        </label>
+                        <textarea
+                          name="tutorial"
+                          id="tutorial"
+                          rows="5"
+                          class="form-control"
+                          placeholder="Share with us"
+                        ></textarea>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="form-group">
+                    <label>
+                      Do you want to create a dedicated app for this? *
+                    </label>
+                    <div class="form-inline">
+                      <div class="form-check">
+                        <input
+                          type="radio"
+                          class="form-check-input"
+                          id="dedicated_app"
+                          name="dedicated_app"
+                          value="yes"
+                        />
+                        <label
+                          for="dedicated_app"
+                          class="form-check-label mr-3"
+                        >
+                          Yes
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <input
+                          type="radio"
+                          class="form-check-input"
+                          id="dedicated_app_no"
+                          name="dedicated_app"
+                          value="no"
+                        />
+                        <label
+                          for="dedicated_app_no"
+                          class="form-check-label mr-3"
+                        >
+                          No
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <input
+                          type="radio"
+                          class="form-check-input"
+                          id="dedicated_app_maybe"
+                          name="dedicated_app"
+                          value="maybe"
+                        />
+                        <label
+                          for="dedicated_app_maybe"
+                          class="form-check-label mr-3"
+                        >
+                          Maybe
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="form-group">
+                    <button class="btn btn-primary btn-block">Register</button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Bootstrap JS -->
+    <script src="./assets/js/jquery.min.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./assets/js/bootstrap.min.js"></script>
+
+    <script>
+      (function () {
+        "use strict";
+        window.addEventListener(
+          "load",
+          function () {
+            // Code
+            let forms = document.getElementsByTagName("form");
+            var validation = Array.prototype.filter.call(
+              forms,
+              function (form) {
+                form.addEventListener(
+                  "submit",
+                  function (event) {
+                    if (form.checkValidity() === false) {
+                      event.preventDefault();
+                      event.stopPropagation();
+                    }
+                    form.classList.add("was-validated");
+                  },
+                  false
+                );
+              }
+            );
+          },
+          false
+        );
+      })();
+    </script>
+  </body>
+</html>

@@ -13,3 +13,17 @@
     color: #FFF;
     background-color: #563d7c;
 }
+
+.bg-hero {
+    height: 720px;
+    background-image: url('https://images.unsplash.com/photo-1536148935331-408321065b18?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=933&q=60');
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+
+textarea {
+    resize: none;
+}
