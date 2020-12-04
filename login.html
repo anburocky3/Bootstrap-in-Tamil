@@ -101,31 +101,49 @@
               <form class="needs-validation" action="" method="POST" novalidate>
                 <div class="form-group" style="position: relative">
                   <label for="email">Email</label>
-                  <input
-                    type="email"
-                    name="email"
-                    id="email"
-                    class="form-control is-valid"
-                    placeholder="you@awesome.com"
-                    required
-                  />
-                  <div class="valid-tooltip">Looks good!</div>
 
-                  <div class="invalid-feedback">Please enter your email.</div>
+                  <div class="input-group">
+                    <div class="input-group-prepend">
+                      <span class="input-group-text" id="email">
+                        <i class="fa fa-envelope-o"></i>
+                      </span>
+                    </div>
+                    <input
+                      type="email"
+                      name="email"
+                      id="email"
+                      class="form-control is-valid rounded-right"
+                      placeholder="you@awesome.com"
+                      aria-describedby="email"
+                      required
+                    />
+
+                    <div class="valid-tooltip">Looks good!</div>
+
+                    <div class="invalid-feedback">Please enter your email.</div>
+                  </div>
                 </div>
 
                 <div class="form-group">
                   <label for="password">Password</label>
-                  <input
-                    type="password"
-                    name="password"
-                    id="password"
-                    placeholder="Password"
-                    class="form-control"
-                    required
-                  />
-                  <div class="invalid-feedback">
-                    Please enter your password.
+
+                  <div class="input-group">
+                    <div class="input-group-prepend">
+                      <span class="input-group-text">
+                        <i class="fa fa-key"></i>
+                      </span>
+                    </div>
+                    <input
+                      type="password"
+                      name="password"
+                      class="form-control rounded-right"
+                      id="password"
+                      placeholder="Password"
+                      required
+                    />
+                    <div class="invalid-feedback">
+                      Please enter your password.
+                    </div>
                   </div>
                 </div>
 
