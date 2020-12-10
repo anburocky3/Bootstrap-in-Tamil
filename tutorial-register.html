@@ -93,11 +93,11 @@
     <!-- End Header -->
 
     <!-- Content -->
-    <section class="bg-hero pt-5 text-white">
+    <section class="bg-hero pt-0 pt-sm-5 text-white">
       <div class="container">
         <div class="row">
           <div class="col-sm-4">
-            <div class="mt-5">
+            <div class="mt-sm-5">
               <img
                 src="https://icons-for-free.com/iconfiles/png/512/message+one+comment+one+message+request+icon-1320184041562889001.png"
                 alt=""
@@ -109,17 +109,17 @@
               </p>
             </div>
           </div>
-          <div class="col-sm-8 text-dark">
+          <div class="col-sm-8 mb-5 text-dark">
             <div class="card">
               <div class="card-body">
                 <form
                   action=""
                   method="POST"
-                  onsubmit="return false"
+                  onsubmit="return false;"
                   novalidate
                 >
                   <div class="form-row">
-                    <div class="col-6">
+                    <div class="col-sm-6">
                       <div class="form-group">
                         <label for="name">Full Name</label>
                         <input
@@ -128,9 +128,12 @@
                           class="form-control"
                           required
                         />
+                        <div class="invalid-feedback">
+                          Name field is required
+                        </div>
                       </div>
                     </div>
-                    <div class="col-6">
+                    <div class="col-sm-6">
                       <div class="form-group">
                         <label for="email">Email</label>
                         <input
@@ -139,25 +142,27 @@
                           class="form-control"
                           required
                         />
+                        <div class="invalid-feedback">
+                          Enter the correct email
+                        </div>
                       </div>
                     </div>
                   </div>
 
                   <div class="form-group">
                     <label for="">
-                      Previously, what did you learn from this channel?
+                      Previously, what did you learned from this channel?
                     </label>
 
                     <div class="row">
-                      <div class="col-6">
+                      <div class="col-sm-6">
                         <div class="form-check">
                           <input
                             type="checkbox"
                             class="form-check-input"
                             id="courses_html5"
-                            name="courses[]"
+                            name="courses"
                             value="HTML5"
-                            required
                           />
                           <label for="courses_html5" class="form-check-label">
                             HTML5 Course
@@ -168,7 +173,7 @@
                             type="checkbox"
                             class="form-check-input"
                             id="courses_css"
-                            name="courses[]"
+                            name="courses"
                             value="CSS3"
                           />
                           <label for="courses_css" class="form-check-label">
@@ -180,20 +185,20 @@
                             type="checkbox"
                             class="form-check-input"
                             id="courses"
-                            required
+                            name="courses[]"
                           />
                           <label for="courses" class="form-check-label">
                             CSS Flexbox
                           </label>
                         </div>
                       </div>
-                      <div class="col-6">
+                      <div class="col-sm-6">
                         <div class="form-check">
                           <input
                             type="checkbox"
                             class="form-check-input"
                             id="courses"
-                            required
+                            name="courses[]"
                           />
                           <label for="courses" class="form-check-label">
                             Bootstrap Course
@@ -204,7 +209,7 @@
                             type="checkbox"
                             class="form-check-input"
                             id="courses"
-                            required
+                            name="courses[]"
                           />
                           <label for="courses" class="form-check-label">
                             JavaScript Course
@@ -215,7 +220,7 @@
                             type="checkbox"
                             class="form-check-input"
                             id="courses"
-                            required
+                            name="courses[]"
                           />
                           <label for="courses" class="form-check-label">
                             Others
@@ -225,10 +230,10 @@
                     </div>
                   </div>
                   <div class="row">
-                    <div class="col-6">
+                    <div class="col-sm-6">
                       <div class="form-group">
                         <label for="isSubscribed" class="mr-4">
-                          Did you subscribe to the channel? *
+                          Did you subscribe to the channel?
                         </label>
                         <div class="form-check">
                           <input
@@ -236,7 +241,9 @@
                             name="isSubscribed"
                             id="subscribed_yes"
                             class="form-check-input"
+                            required
                           />
+
                           <label
                             for="subscribed_yes"
                             class="form-check-label mr-3"
@@ -255,22 +262,29 @@
                             No
                           </label>
                         </div>
-
                         <div class="form-group mt-3">
                           <label for="year">
-                            From which year are you with us? *
+                            From which year are you with us?
                           </label>
-                          <select name="year" id="year" class="form-control">
+                          <select
+                            name="year"
+                            id="year"
+                            class="form-control"
+                            required
+                          >
                             <option value="">--Choose--</option>
-                            <option value="2019">2019</option>
+                            <!-- <option value="2019">2019</option>; -->
                           </select>
+                          <div class="invalid-feedback">
+                            This field is required
+                          </div>
                         </div>
                       </div>
                     </div>
-                    <div class="col-6">
+                    <div class="col-sm-6">
                       <div class="form-group">
                         <label for="tutorial">
-                          Do you have any tutorial requests? *
+                          Do you have any tutorial requests?
                         </label>
                         <textarea
                           name="tutorial"
@@ -278,14 +292,18 @@
                           rows="5"
                           class="form-control"
                           placeholder="Share with us"
+                          required
                         ></textarea>
+                        <div class="invalid-feedback">
+                          Enter the description briefly!
+                        </div>
                       </div>
                     </div>
                   </div>
 
                   <div class="form-group">
                     <label>
-                      Do you want to create a dedicated app for this? *
+                      Do you want to create a dedicated app for this?
                     </label>
                     <div class="form-inline">
                       <div class="form-check">
@@ -295,6 +313,7 @@
                           id="dedicated_app"
                           name="dedicated_app"
                           value="yes"
+                          required
                         />
                         <label
                           for="dedicated_app"
@@ -337,7 +356,10 @@
                   </div>
 
                   <div class="form-group">
-                    <button class="btn btn-primary btn-block">Register</button>
+                    <button class="btn btn-primary btn-block">
+                      <i class="fa fa-external-link mr-2"></i>
+                      Register
+                    </button>
                   </div>
                 </form>
               </div>
@@ -357,6 +379,20 @@
     <script src="./assets/js/bootstrap.min.js"></script>
 
     <script>
+      //Adding dynamic years
+      var yearDOM = document.getElementById("year");
+
+      var myOptions = '<option value="">-- Select Year --</option>';
+
+      var currentYear = new Date().getFullYear();
+
+      for (var i = 2014; i <= currentYear; i++) {
+        myOptions +=
+          '<option value="' + i + '">With cyberdude from ' + i + "</option>";
+      }
+
+      yearDOM.innerHTML = myOptions;
+
       (function () {
         "use strict";
         window.addEventListener(
@@ -373,6 +409,8 @@
                     if (form.checkValidity() === false) {
                       event.preventDefault();
                       event.stopPropagation();
+                    } else if (form.checkValidity() === true) {
+                      alert("The form was submitted");
                     }
                     form.classList.add("was-validated");
                   },
