@@ -1,29 +1,41 @@
-.breadcrumb-item+.breadcrumb-item::before {
-    content: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI4IiBoZWlnaHQ9IjgiPjxwYXRoIGQ9Ik0yLjUgMEwxIDEuNSAzLjUgNCAxIDYuNSAyLjUgOGw0LTQtNC00eiIgZmlsbD0iY3VycmVudENvbG9yIi8+PC9zdmc+);
+html,
+body {
+  width: 100%;
+  height: 100%;
 }
 
-@media all and (max-width:480px) {
-    .mobile-block {
-        width: 100%;
-        display: block;
-    }
+.breadcrumb-item + .breadcrumb-item::before {
+  content: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI4IiBoZWlnaHQ9IjgiPjxwYXRoIGQ9Ik0yLjUgMEwxIDEuNSAzLjUgNCAxIDYuNSAyLjUgOGw0LTQtNC00eiIgZmlsbD0iY3VycmVudENvbG9yIi8+PC9zdmc+);
+}
+
+@media all and (max-width: 480px) {
+  .mobile-block {
+    width: 100%;
+    display: block;
+  }
 }
 
 .bs-color {
-    color: #FFF;
-    background-color: #563d7c;
+  color: #fff;
+  background-color: #563d7c;
 }
 
 .bg-hero {
-    height: 720px;
-    background-image: url('https://images.unsplash.com/photo-1536148935331-408321065b18?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=933&q=60');
-    background-repeat: no-repeat;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    background-size: cover;
-    -o-background-size: cover;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background: url("https://images.unsplash.com/photo-1504384308090-c894fdcc538d?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=2550&q=80")
+    center center no-repeat;
+  background-size: cover;
 }
 
-textarea {
-    resize: none;
+.bg-hero:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-image: linear-gradient(to bottom right, #000, #000);
+  opacity: 0.6;
 }
