@@ -53,7 +53,7 @@
           </button>
 
           <div class="collapse navbar-collapse" id="myNavBar">
-            <ul class="navbar-nav ms-auto">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
               <li class="nav-item">
                 <a href="/index.html" class="nav-link">Home</a>
               </li>
@@ -73,7 +73,7 @@
               <li class="nav-item">
                 <a href="/contact.html" class="nav-link">Contact</a>
               </li>
-              <li class="nav-item dropdown">
+              <li class="nav-item dropdown ms-2">
                 <a
                   class="btn btn-success shadow-none my-2 my-sm-0 ml-0 ml-sm-3 dropdown-toggle active"
                   href="#"
@@ -125,10 +125,10 @@
                   onsubmit="return false;"
                   novalidate
                 >
-                  <div class="row my-2">
+                  <div class="row">
                     <div class="col-sm-6">
-                      <div class="form-group">
-                        <label for="name">Full Name</label>
+                      <div class="mb-3">
+                        <label for="name" class="form-label">Full Name</label>
                         <input
                           type="text"
                           placeholder="Full name"
@@ -141,8 +141,8 @@
                       </div>
                     </div>
                     <div class="col-sm-6">
-                      <div class="form-group">
-                        <label for="email">Email</label>
+                      <div class="mb-3">
+                        <label for="email" class="form-label">Email</label>
                         <input
                           type="email"
                           placeholder="you@awesome.com"
@@ -156,7 +156,7 @@
                     </div>
                   </div>
 
-                  <div class="form-group">
+                  <div class="mb-3">
                     <label for="">
                       Previously, what did you learned from this channel?
                     </label>
@@ -241,8 +241,8 @@
                   </div>
                   <div class="row">
                     <div class="col-sm-6">
-                      <div class="form-group">
-                        <label for="isSubscribed" class="me-4">
+                      <div class="mb-3">
+                        <label for="isSubscribed" class="form-label">
                           Did you subscribe to the channel?
                         </label>
                         <div class="form-check">
@@ -272,8 +272,8 @@
                             No
                           </label>
                         </div>
-                        <div class="form-group mt-3">
-                          <label for="year">
+                        <div class="mb-3 mt-3">
+                          <label for="year" class="form-label">
                             From which year are you with us?
                           </label>
                           <select
@@ -292,8 +292,8 @@
                       </div>
                     </div>
                     <div class="col-sm-6">
-                      <div class="form-group">
-                        <label for="tutorial">
+                      <div class="mb-3">
+                        <label for="tutorial" class="form-label">
                           Do you have any tutorial requests?
                         </label>
                         <textarea
@@ -311,12 +311,12 @@
                     </div>
                   </div>
 
-                  <div class="form-group">
-                    <label>
+                  <div class="mb-3">
+                    <label class="form-label">
                       Do you want to create a dedicated app for this?
                     </label>
                     <div class="form-inline">
-                      <div class="form-check">
+                      <div class="form-check form-check-inline">
                         <input
                           type="radio"
                           class="form-check-input"
@@ -325,14 +325,11 @@
                           value="yes"
                           required
                         />
-                        <label
-                          for="dedicated_app"
-                          class="form-check-label me-3"
-                        >
+                        <label for="dedicated_app" class="form-check-label">
                           Yes
                         </label>
                       </div>
-                      <div class="form-check">
+                      <div class="form-check form-check-inline">
                         <input
                           type="radio"
                           class="form-check-input"
@@ -340,14 +337,11 @@
                           name="dedicated_app"
                           value="no"
                         />
-                        <label
-                          for="dedicated_app_no"
-                          class="form-check-label me-3"
-                        >
+                        <label for="dedicated_app_no" class="form-check-label">
                           No
                         </label>
                       </div>
-                      <div class="form-check">
+                      <div class="form-check form-check-inline">
                         <input
                           type="radio"
                           class="form-check-input"
@@ -357,7 +351,7 @@
                         />
                         <label
                           for="dedicated_app_maybe"
-                          class="form-check-label me-3"
+                          class="form-check-label"
                         >
                           Maybe
                         </label>
@@ -365,8 +359,8 @@
                     </div>
                   </div>
 
-                  <div class="form-group">
-                    <button class="btn btn-primary btn-block">
+                  <div class="d-grid">
+                    <button class="btn btn-primary">
                       <i class="fa fa-external-link me-2"></i>
                       Register
                     </button>

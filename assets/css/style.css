@@ -27,6 +27,8 @@ body {
   background: url("https://images.unsplash.com/photo-1504384308090-c894fdcc538d?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=2550&q=80")
     center center no-repeat;
   background-size: cover;
+  z-index: 1;
+
 }
 
 .bg-hero:before {
@@ -38,4 +40,5 @@ body {
   left: 0;
   background-image: linear-gradient(to bottom right, #000, #000);
   opacity: 0.6;
+  z-index: -1;
 }
