@@ -196,7 +196,14 @@
                       required
                     />
                     <label class="form-check-label" for="termsAgreement">
-                      I agree to terms and conditions.
+                      I agree to
+                      <a
+                        href="#"
+                        class="text-decoration-none"
+                        data-bs-toggle="modal"
+                        data-bs-target="#terms"
+                        >terms and conditions</a
+                      >.
                     </label>
                   </div>
                 </div>
@@ -205,9 +212,31 @@
                   <button type="reset" class="btn btn-secondary">Reset</button>
 
                   <button class="btn btn-success">
-                    <i class="fa fa-external-link me-1"></i>
+                    <i class="fa fa-external-link mr-1"></i>
                     Register
                   </button>
+                  <div class="float-end">
+                    <button
+                      type="button"
+                      class="btn btn-info"
+                      data-bs-toggle="modal"
+                      data-bs-target="#author"
+                      data-bs-fullname="Anbuselvan"
+                    >
+                      <i class="fa fa-user mr-2"></i>
+                      Anbu
+                    </button>
+                    <button
+                      type="button"
+                      class="btn btn-info"
+                      data-bs-toggle="modal"
+                      data-bs-target="#author"
+                      data-bs-fullname="Trisha"
+                    >
+                      <i class="fa fa-user-o mr-2"></i>
+                      Trisha
+                    </button>
+                  </div>
                 </div>
               </form>
             </div>
@@ -215,13 +244,154 @@
         </div>
       </div>
     </div>
+
+    <div
+      class="modal fade"
+      id="terms"
+      tabindex="-1"
+      aria-labelledby="termsModal"
+      aria-hidden="true"
+    >
+      <!-- data-bs-backdrop="static" -->
+      <!-- data-bs-keyboard="false" -->
+      <!-- data-bs-focus="false" -->
+
+      <!-- modal-dialog-scrollable -->
+      <!-- modal-dialog-centered -->
+      <!-- modal-xl, modal-lg, modal-sm -->
+
+      <!-- modal-fullscreen -->
+      <!-- modal-fullscreen-sm-down ... modal-fullscreen-xxl-down -->
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="termsModal">Terms and conditions</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <p>Modal text goes here</p>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugit at
+              tenetur suscipit exercitationem illum sequi illo placeat aut cum
+              corrupti ipsa beatae veniam, unde provident! Sint enim provident
+              adipisci aperiam.
+            </p>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+            <button type="button" class="btn btn-primary">Save changes</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- #author -->
+    <div class="modal fade" id="author">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">
+              User info:
+              <span class="badge badge-primary">Anbuselvan</span>
+            </h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <!-- Our source1 -->
+            <div class="row text-center">
+              <div class="col-sm-4">
+                <img
+                  width="140"
+                  src="https://www.w3schools.com/howto/img_avatar.png"
+                  alt="UserPicture"
+                  class="rounded"
+                />
+              </div>
+              <div class="col-sm-8">
+                <table class="table table-bordered mt-3 mt-sm-0">
+                  <tbody>
+                    <tr>
+                      <th>Name</th>
+                      <td class="fullname">Anbuselvan</td>
+                    </tr>
+                    <tr>
+                      <th>Email</th>
+                      <td>anbu@gmail.com</td>
+                    </tr>
+                    <tr>
+                      <th>Website</th>
+                      <td>
+                        <a href="https://cyberdudenetworks.com" target="_blank"
+                          >cyberdudenetworks.com</a
+                        >
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button class="btn btn-primary" data-bs-dismiss="modal">
+              Close
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
     <!-- Bootstrap JS -->
-    <script src="./assets/js/jquery.min.js"></script>
     <script
-      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
-      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"
+      integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU"
       crossorigin="anonymous"
     ></script>
     <script src="./assets/js/bootstrap.min.js"></script>
+
+    <script>
+      var authorModal = document.getElementById("author");
+      authorModal.addEventListener("show.bs.modal", function (event) {
+        // Button that triggered the modal
+        var button = event.relatedTarget;
+        // Extract info from data-bs-* attributes
+        var recipient = button.getAttribute("data-bs-fullname");
+        // If necessary, you could initiate an AJAX request here
+        // and then do the updating in a callback.
+        //
+        // Update the modal's content.
+        var modalTitle = authorModal.querySelector(".modal-title");
+        var modalFullName = authorModal.querySelector(".modal-body .fullname");
+
+        modalTitle.textContent = "New message to " + recipient;
+        modalFullName.textContent = recipient;
+      });
+
+      // Jquery Method
+      $("#author").on("show.bs.modal", function (event) {
+        var button = $(event.relatedTarget); // Button that triggered the modal
+        var recipient = button.data("fullname"); // Extract info from data-* attributes
+        // If necessary, you could initiate an AJAX request here (and then do the updating in a callback).
+        // Update the modal's content. We'll use jQuery here, but you could use a data binding library or other methods instead.
+        var modal = $(this);
+        modal.find(".modal-title").text("New message to " + recipient);
+        modal.find(".modal-body .fullname").text(recipient);
+      });
+      // End of Jquery Method
+    </script>
   </body>
 </html>
