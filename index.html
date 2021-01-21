@@ -122,40 +122,33 @@
           Total videos:
           <span class="badge bg-success">120</span>
         </button>
+      </div>
+    </div>
 
-        <button
-          id="welcome"
-          class="btn btn-warning"
-          data-bs-toggle="popover"
-          title="Welcome Offer! Enjoy!"
-          data-bs-container="body"
-          data-bs-placement="bottom"
-          data-bs-content="Grab these coupon codes for next three transactions."
-        >
-          Welcome offer
-        </button>
+    <div class="container my-5">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="pb-3">Progress indications</h5>
+          <!-- Progress -->
+          <div class="progress" style="height: 50px">
+            <div
+              id="uploadProgress"
+              class="progress-bar bg-success w-50 progress-bar-striped"
+              aria-valuenow="50"
+              aria-valuemin="0"
+              aria-valuemax="100"
+            >
+              Uploading data .. (50%)
+            </div>
+          </div>
 
-        <button
-          class="btn btn-warning"
-          data-bs-toggle="popover"
-          title="Welcome Offer! Enjoy!"
-          data-bs-container="body"
-          data-bs-placement="top"
-          data-bs-content="Grab these coupon codes for next three transactions."
-        >
-          Welcome offer 2
-        </button>
-
-        <button
-          class="btn btn-warning"
-          data-bs-toggle="popover"
-          title="Welcome Offer! Enjoy!"
-          data-bs-container="body"
-          data-bs-placement="right"
-          data-bs-content="Grab these coupon codes for next three transactions."
-        >
-          Welcome offer 3
-        </button>
+          <!-- Multiple -->
+          <!-- <div class="progress" style="height: 30px">
+            <div class="progress-bar bg-success w-25">Images</div>
+            <div class="progress-bar bg-danger w-25">Other</div>
+            <div class="progress-bar bg-warning w-25">Videos</div>
+          </div> -->
+        </div>
       </div>
     </div>
 
@@ -164,15 +157,11 @@
     <script src="./assets/js/bootstrap.min.js"></script>
 
     <script>
-      var popoverTriggerList = [].slice.call(
-        document.querySelectorAll('[data-bs-toggle="popover"]')
-      );
+      var uploadProgress = document.getElementById("uploadProgress");
 
-      var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
-        return new bootstrap.Popover(popoverTriggerEl, {
-          trigger: "focus",
-        });
-      });
+      setInterval(function () {
+        uploadProgress.classList.toggle("progress-bar-animated");
+      }, 3000);
     </script>
   </body>
 </html>
