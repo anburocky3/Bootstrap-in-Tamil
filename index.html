@@ -122,16 +122,57 @@
           Total videos:
           <span class="badge bg-success">120</span>
         </button>
+
+        <button
+          id="welcome"
+          class="btn btn-warning"
+          data-bs-toggle="popover"
+          title="Welcome Offer! Enjoy!"
+          data-bs-container="body"
+          data-bs-placement="bottom"
+          data-bs-content="Grab these coupon codes for next three transactions."
+        >
+          Welcome offer
+        </button>
+
+        <button
+          class="btn btn-warning"
+          data-bs-toggle="popover"
+          title="Welcome Offer! Enjoy!"
+          data-bs-container="body"
+          data-bs-placement="top"
+          data-bs-content="Grab these coupon codes for next three transactions."
+        >
+          Welcome offer 2
+        </button>
+
+        <button
+          class="btn btn-warning"
+          data-bs-toggle="popover"
+          title="Welcome Offer! Enjoy!"
+          data-bs-container="body"
+          data-bs-placement="right"
+          data-bs-content="Grab these coupon codes for next three transactions."
+        >
+          Welcome offer 3
+        </button>
       </div>
     </div>
 
     <!-- Bootstrap JS -->
-    <script src="./assets/js/jquery.min.js"></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
-      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
-      crossorigin="anonymous"
-    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
     <script src="./assets/js/bootstrap.min.js"></script>
+
+    <script>
+      var popoverTriggerList = [].slice.call(
+        document.querySelectorAll('[data-bs-toggle="popover"]')
+      );
+
+      var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
+        return new bootstrap.Popover(popoverTriggerEl, {
+          trigger: "focus",
+        });
+      });
+    </script>
   </body>
 </html>
