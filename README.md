@@ -27,6 +27,11 @@ Learn to build beautiful high quality web designs, sites using the Bootstrap CSS
 | #32 | Bootstrap v5.0.0-beta1 features & migrations | https://github.com/anburocky3/Bootstrap-in-Tamil/tree/32-bootstrap5-features-migrations          |
 | #33 | Migrating from Bootstrap 4 to Bootstrap 5    | https://github.com/anburocky3/Bootstrap-in-Tamil/tree/33-Migrating-from-bootstrap4-to-bootstrap5 |
 | #34 | Bootstrap Modals                             | https://github.com/anburocky3/Bootstrap-in-Tamil/tree/34-Bootstrap-Models                        |
+| #35 | Bootstrap Navs & Tabs                        | https://github.com/anburocky3/Bootstrap-in-Tamil/tree/35-Bootstrap-navs                          |
+| #36 | Bootstrap Pagination                         | https://github.com/anburocky3/Bootstrap-in-Tamil/tree/36-Bootstrap-Pagination                    |
+| #37 | Bootstrap Popovers                           | https://github.com/anburocky3/Bootstrap-in-Tamil/tree/37-Bootstrap-Popovers                      |
+| #38 | Bootstrap Tooltips                           | https://github.com/anburocky3/Bootstrap-in-Tamil/tree/38-Bootstrap-tooltips                      |
+| #39 | Bootstrap Progressbar                        | https://github.com/anburocky3/Bootstrap-in-Tamil/tree/39-Bootstrap-Progress                      |
 
 ---
 
