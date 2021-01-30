@@ -137,24 +137,11 @@
 
         <button
           class="btn btn-warning"
-          data-bs-toggle="popover"
-          title="Welcome Offer! Enjoy!"
-          data-bs-container="body"
-          data-bs-placement="top"
-          data-bs-content="Grab these coupon codes for next three transactions."
-        >
-          Welcome offer 2
-        </button>
-
-        <button
-          class="btn btn-warning"
-          data-bs-toggle="popover"
-          title="Welcome Offer! Enjoy!"
-          data-bs-container="body"
+          title="For only subscribers"
+          data-bs-toggle="tooltip"
           data-bs-placement="right"
-          data-bs-content="Grab these coupon codes for next three transactions."
         >
-          Welcome offer 3
+          Get all courses free!
         </button>
       </div>
     </div>
@@ -172,6 +159,13 @@
         return new bootstrap.Popover(popoverTriggerEl, {
           trigger: "focus",
         });
+      });
+
+      var tooltipTriggerList = [].slice.call(
+        document.querySelectorAll('[data-bs-toggle="tooltip"]')
+      );
+      var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+        return new bootstrap.Tooltip(tooltipTriggerEl);
       });
     </script>
   </body>
