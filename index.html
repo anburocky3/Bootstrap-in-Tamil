@@ -102,52 +102,57 @@
   <div class="container my-5">
     <div class="card">
       <div class="card-body">
-        <h5 class="pb-3">Spinners</h5>
-        <!-- Spinners -->
-        <div class="spinner-grow text-success m-5" role="status">
-          <span class="visually-hidden">Loading...</span>
-        </div>
-        <div class="spinner-border text-primary" role="status">
-          <span class="visually-hidden">Loading...</span>
-        </div>
-        <div class="spinner-border text-secondary" role="status">
-          <span class="visually-hidden">Loading...</span>
-        </div>
-        <div class="spinner-border text-warning" role="status">
-          <span class="visually-hidden">Loading...</span>
-        </div>
-        <div class="spinner-border text-info" role="status">
-          <span class="visually-hidden">Loading...</span>
-        </div>
-        <div class="spinner-border text-dark" role="status">
-          <span class="visually-hidden">Loading...</span>
-        </div>
+        <h5 class="pb-3">Toasts</h5>
+        <button type="button" class="btn btn-primary" onclick="showToast()">Show live toast</button>
 
-        <!-- Flex -->
-        <!-- align-items-center -->
-        <div class="d-flex justify-content-center">
-          <div class="spinner-border" role="status">
-            <span class="visually-hidden">Loading...</span>
+        <!-- Toast -->
+        <div class="toast-container position-fixed bottom-0 end-0 p-3" style="z-index: 5">
+
+          <div class="toast align-items-center bg-dark text-white border-0" id="toast" role="alert"
+            aria-live="assertive" aria-atomic="true">
+            <div class="toast-header">
+              <strong class="me-auto">You have a notification!</strong>
+
+              <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+            </div>
+            <div class="toast-body">
+              New video has been released by #cyberdude
+              <div class="mt-2 pt-2 text-end">
+                <button type="button" class="btn btn-primary btn-sm">Ok</button>
+                <button type="button" class="btn btn-dark btn-sm" data-bs-dismiss="toast">Close</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="toast align-items-center bg-success text-white border-0" id="toast" role="alert"
+            aria-live="assertive" aria-atomic="true">
+            <div class="d-flex">
+
+              <div class="toast-body">
+                New video has been released by #cyberdude
+              </div>
+              <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast"
+                aria-label="Close"></button>
+            </div>
+          </div>
+
+          <div class="toast" id="toast" role="alert" aria-live="assertive" aria-atomic="true">
+            <div class="toast-header">
+              <strong class="me-auto">You have a notification!</strong>
+
+              <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+            </div>
+            <div class="toast-body">
+              New video has been released by #cyberdude
+              <div class="mt-2 pt-2 text-end border-top">
+                <button type="button" class="btn btn-primary btn-sm">Ok</button>
+                <button type="button" class="btn btn-secondary btn-sm" data-bs-dismiss="toast">Close</button>
+              </div>
+            </div>
           </div>
         </div>
 
-        <!-- Float -->
-        <div class="clearfix">
-          <div class="spinner-border float-end" role="status">
-            <span class="visually-hidden">Loading...</span>
-          </div>
-        </div>
-
-        <!-- Buttons -->
-        <button class="btn btn-primary" type="button" disabled>
-          <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
-          <span class="visually-hidden">Loading...</span>
-        </button>
-        <button class="btn btn-primary" type="button" disabled>
-          <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
-          Loading...
-        </button>
-        <!-- End Spinners -->
+        <!-- End Toast -->
       </div>
     </div>
   </div>
@@ -156,6 +161,42 @@
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
   <script src="./assets/js/bootstrap.min.js"></script>
 
+  <script>
+    let options = {
+      autohide: false,
+      delay: 2000
+    }
+
+    var toastElList = [].slice.call(document.querySelectorAll('.toast'))
+    var toastList = toastElList.map(function (toastEl) {
+      let toastElement = new bootstrap.Toast(toastEl, options)
+
+      toastElement.show()
+    })
+
+
+    // console.log(toastList);
+
+    // function showToast() {
+
+
+    //   let toastSelector = document.getElementById("toast")
+
+    //   let toastElement = new bootstrap.Toast(toastSelector, options)
+
+    //   toastElement.show();
+    // }
+
+
+
+    // toastList.show()
+
+    // document.getElementById("toastbtn").onclick = function () {
+    //   var myAlert = document.getElementById('toastNotice'); //select id of toast
+    //   var bsAlert = new bootstrap.Toast(myAlert); //inizialize it
+    //   bsAlert.show(); //show it
+    // }
+  </script>
 </body>
 
 </html>
