@@ -32,6 +32,9 @@ Learn to build beautiful high quality web designs, sites using the Bootstrap CSS
 | #37 | Bootstrap Popovers                           | https://github.com/anburocky3/Bootstrap-in-Tamil/tree/37-Bootstrap-Popovers                      |
 | #38 | Bootstrap Tooltips                           | https://github.com/anburocky3/Bootstrap-in-Tamil/tree/38-Bootstrap-tooltips                      |
 | #39 | Bootstrap Progressbar                        | https://github.com/anburocky3/Bootstrap-in-Tamil/tree/39-Bootstrap-Progress                      |
+| #40 | Bootstrap Scrollspy Navigation               | https://github.com/anburocky3/Bootstrap-in-Tamil/tree/40-Bootstrap-Scrollspy-navs                |
+| #41 | Bootstrap Scrollspy List Group               | https://github.com/anburocky3/Bootstrap-in-Tamil/tree/41-Bootstrap-Scrollspy-list                |
+| #42 | Bootstrap Spinners                           | https://github.com/anburocky3/Bootstrap-in-Tamil/tree/42-Bootstrap-spinners                      |
 
 ---
 
