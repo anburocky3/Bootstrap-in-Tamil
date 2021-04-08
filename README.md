@@ -35,6 +35,10 @@ Learn to build beautiful high quality web designs, sites using the Bootstrap CSS
 | #40 | Bootstrap Scrollspy Navigation               | https://github.com/anburocky3/Bootstrap-in-Tamil/tree/40-Bootstrap-Scrollspy-navs                |
 | #41 | Bootstrap Scrollspy List Group               | https://github.com/anburocky3/Bootstrap-in-Tamil/tree/41-Bootstrap-Scrollspy-list                |
 | #42 | Bootstrap Spinners                           | https://github.com/anburocky3/Bootstrap-in-Tamil/tree/42-Bootstrap-spinners                      |
+| #43 | Bootstrap Toasts                             | https://github.com/anburocky3/Bootstrap-in-Tamil/tree/43-Bootstrap-toasts                        |
+| #44 | Bootstrap Helpers                            | https://github.com/anburocky3/Bootstrap-in-Tamil/tree/44-Bootstrap-helpers                       |
+| #45 | Bootstrap Utilities                          | No codes available                                                                               |
+| #46 | What to learn next?                          | No codes available                                                                               |
 
 ---
 
